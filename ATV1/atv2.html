@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>KidsPage</title>
+      <link rel="stylesheet" type="text/css" href="bootstrap.min.css" media="screen,projection">
+      <!--  href="style.css" <div class="header">
+			<a href="" title="Menu"></a>
+		</div>-->
+	
+		<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+
+	<script type="text/javascript">
+        //configura o scoll para a barra de atividades descer juntamente
+		var _rys = jQuery.noConflict();
+		_rys("document").ready(function(){
+		
+			_rys(window).scroll(function () {
+				if (_rys(this).scrollTop() > 136) {
+					_rys('.nav-container').addClass("f-nav");
+				} else {
+					_rys('.nav-container').removeClass("f-nav");
+				}
+			});
+
+		});
+        
+        function calcular() {
+
+        if(parseInt(document.atv2.opcao1.value) == 1 && parseInt(document.atv2.opcao2.value) == 2 && parseInt(document.atv2.opcao3.value) == 3 && parseInt(document.atv2.opcao4.value) == 4){
+                window.alert("Parabéns você acertou todas as opções! :)");
+                
+            }else{
+                window.alert("opah, não está correto sua resposta!");
+            }
+
+        
+
+      }
+	</script>
+
+
+  </head>
+  <body>
+      
+         
+    <div class="wrapper">
+
+		
+		<div class="nav-container">
+			<div class="nav">
+				<ul>
+					<li><a href="didatica.html">Atividade 1</a></li>
+					<li><a href="atv2.html">Atividade 2</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+			
+		<div class="container">	
+			<div class="main-content">
+                
+                <br><h4>Atividade 2: Relacione o nome com a figura geométrica! </h4><br>
+                <form name="atv2" >
+                 
+                    
+                <table width="80%" height="10%" border="0" cellspacing="50%" cellpadding="3">
+                    
+                   <tr align="center">
+                      <td>
+                         <table width="20%"   >
+                            <tr align="center">
+                               <th> 
+                                <label>
+                                      
+                                      <img src="imagens/triangulo.png"  alt="triangulo" />
+                                </label>
+                                </th>
+                                 
+                            </tr>
+                         </table>
+                      </td>
+
+                      <td>
+                         <table width="20%"  >
+                            <tr align="center">
+                                 <th><select name="opcao1">
+                                      <option value="1">Triângulo</option>
+                                      <option value="2">Quadrado</option>
+                                      <option value="3">Círculo</option>
+                                      <option value="4">Retângulo</option>
+
+                                  </select></th>
+                            </tr>
+                         </table>
+                      </td>
+
+                      <td>
+                         <table width="20%"  >
+                          <tr align="center">
+                               <th>
+                                <label>
+                                      
+                                      <img src="imagens/quadrado.png"  alt="quadrado" />
+                                </label> 
+                              </th>    
+                            </tr>
+                         </table>
+                      </td> 
+                       
+                        <td>
+                         <table width="20%"  >
+                          <tr align="center">
+                               <th> <select name="opcao2">
+                                      <option value="1">Triângulo</option>
+                                      <option value="2">Quadrado</option>
+                                      <option value="3">Círculo</option>
+                                      <option value="4">Retângulo</option>
+
+                                  </select>
+                              </th>    
+                            </tr>
+                         </table>
+                      </td> 
+                   </tr>
+                    
+                    
+                    <tr align="center">
+                      <td>
+                         <table width="20%"   >
+                            <tr align="center">
+                                <th>
+                                    <label>
+                                      
+                                      <img src="imagens/circulo.png" alt="circulo" /> 
+                                    </label>
+                                </th>  
+                            </tr>
+                         </table>
+                      </td>
+
+                      <td>
+                         <table width="20%"  >
+                            <tr align="center">
+                                 <th><select name="opcao3">
+                                      <option value="1">Triângulo</option>
+                                      <option value="2">Quadrado</option>
+                                      <option value="3">Círculo</option>
+                                      <option value="4">Retângulo</option>
+
+                                  </select></th>
+                            </tr>
+                         </table>
+                      </td>
+
+                      <td>
+                         <table width="20%"  >
+                          <tr align="center">
+                               <th>
+                                   <label>
+                                      
+                                      <img src="imagens/retangulo.png" alt="retangulo" />  
+                                    </label>
+                              </th>    
+                            </tr>
+                         </table>
+                      </td> 
+                       
+                        <td>
+                         <table width="20%"  >
+                          <tr align="center">
+                                  <th><select name="opcao4">
+                                      <option value="1">Triângulo</option>
+                                      <option value="2">Quadrado</option>
+                                      <option value="3">Círculo</option>
+                                      <option value="4">Retângulo</option>
+
+                                  </select></th>
+                            </tr>
+                         </table>
+                      </td> 
+                   </tr>
+                      
+                </table>
+                 </form>
+                     
+                <h5>Agora, vamos conferir a resposta?</h5><br>    
+                 <button type="button" onclick="calcular()" class="btn btn-primary">Conferir Resposta</button>
+			</div>
+		</div>
+
+
+  </body>
+</html>

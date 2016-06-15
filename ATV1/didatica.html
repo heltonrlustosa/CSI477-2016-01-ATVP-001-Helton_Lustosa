@@ -1,0 +1,468 @@
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>KidsPage</title>
+          <link rel="stylesheet" type="text/css" href="bootstrap.min.css" media="screen,projection">
+          <!--  href="style.css" <div class="header">
+                <a href="" title="Menu"></a>
+            </div>-->
+        <script type="text/javascript" src="jquery-1.12.4.min.js" ></script>
+
+        <script type="text/javascript">
+            //configura o scoll para a barra de atividades descer juntamente
+            var _rys = jQuery.noConflict();
+            _rys("document").ready(function(){
+
+                _rys(window).scroll(function () {
+                    if (_rys(this).scrollTop() > 136) {
+                        _rys('.nav-container').addClass("f-nav");
+                    } else {
+                        _rys('.nav-container').removeClass("f-nav");
+                    }
+                });
+
+            });
+            
+            function resultado(){
+                
+                var resultado = " ";
+                if(document.formulario.grupo1.value != "sabonete"){
+                    resultado = "No Grupo I a resposta correta é: Sabonete\n";
+                }
+                if( document.formulario.grupo2.value != "algodao"){
+                   resultado = resultado + "No Grupo II a resposta correta é: Algodão doce\n";
+                }
+                if( document.formulario.grupo3.value != "maquina"){
+                    resultado = resultado + "No Grupo III a resposta correta é: Maquina de lavar\n";
+                   
+                }
+                if( document.formulario.grupo4.value != "chave"){
+                   
+                    resultado = resultado + "No Grupo IV a resposta correta é: Chave de fenda\n";
+                }
+                    
+                if(resultado==" ")
+                {
+                    window.alert("Parabéns você acertou todas as opções! :)");
+                }
+                else{
+                    
+                    window.alert(resultado);
+                }
+            }
+        </script>
+
+
+      </head>
+      <body>
+
+
+        <div class="wrapper">
+
+
+            <div class="nav-container">
+                <div class="nav">
+                    <ul>
+                        <li><a href="didatica.html">Atividade 1</a></li>
+                        <li><a href="atv2.html">Atividade 2</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="container">	
+                <div class="main-content">	
+                        <br><h4>Atividade 1: Selecione a palavra que não pertence ao grupo! </h4><br>
+                            
+                            <h3>Grupo I</h3><br>
+                            <form name="formulario">
+                                <table  width="80%" height="10%" border="0" cellspacing="50%" cellpadding="3">
+
+                                           <tr align="center">
+                                              <td>
+                                                 <table width="20%"   >
+                                                    <tr align="center">
+                                                       <th> 
+                                                        <label>
+                                                              <input type="radio" name="grupo1" value="arroz"/>Arroz
+                                                              <img src="imagens/arroz.jpg"  alt="arroz" />
+                                                        </label>
+                                                        </th>
+
+                                                    </tr>
+                                                 </table>
+                                              </td>
+
+                                              <td>
+                                                 <table width="20%"  >
+                                                    <tr align="center">
+
+                                                    </tr>
+                                                 </table>
+                                              </td>
+
+                                              <td>
+                                                 <table width="20%"  >
+                                                  <tr align="center">
+                                                       <th>
+                                                        <label>
+                                                              <input type="radio" name="grupo1" value="feijao"/>Feijão
+                                                              <img src="imagens/feijao.jpg"  alt="feijao" />
+                                                        </label> 
+                                                      </th>    
+                                                    </tr>
+                                                 </table>
+                                              </td> 
+
+                                                <td>
+                                                 <table width="20%"  >
+                                                  <tr align="center">
+
+                                                    </tr>
+                                                 </table>
+                                              </td> 
+                                           </tr>
+
+
+                                            <tr align="center">
+                                              <td>
+                                                 <table width="20%"   >
+                                                    <tr align="center">
+                                                        <th>
+                                                            <label>
+                                                              <input type="radio" name="grupo1" value="sabonete"/>Sabonete
+                                                              <img src="imagens/sabonete.jpg" alt="sabonete" /> 
+                                                            </label>
+                                                        </th>  
+                                                    </tr>
+                                                 </table>
+                                              </td>
+
+                                              <td>
+                                                 <table width="20%"  >
+                                                    <tr align="center">
+
+                                                    </tr>
+                                                 </table>
+                                              </td>
+
+                                              <td>
+                                                 <table width="20%"  >
+                                                  <tr align="center">
+                                                       <th>
+                                                           <label>
+                                                              <input type="radio" name="grupo1" value="batata"/>Batata
+                                                              <img src="imagens/batata.jpg" alt="batata" />  
+                                                            </label>
+                                                      </th>    
+                                                    </tr>
+                                                 </table>
+                                              </td> 
+
+                                                <td>
+                                                 <table width="20%"  >
+                                                  <tr align="center">
+
+                                                    </tr>
+                                                 </table>
+                                              </td> 
+                                           </tr>
+
+                                        </table>
+                            
+
+                                <h3>Grupo II</h3><br/>
+                                <table  width="80%" height="10%" border="0" cellspacing="50%" cellpadding="3">
+
+                                   <tr align="center">
+                                      <td>
+                                         <table width="20%"   >
+                                            <tr align="center">
+                                               <th> 
+                                                <label>
+                                                      <input type="radio" name="grupo2" value="bicicleta"/>Bicicleta
+                                                      <img src="imagens/bicicleta.jpg"  alt="bicicleta" />
+                                                </label>
+                                                </th>
+
+                                            </tr>
+                                         </table>
+                                      </td>
+
+                                      <td>
+                                         <table width="20%"  >
+                                            <tr align="center">
+
+                                            </tr>
+                                         </table>
+                                      </td>
+
+                                      <td>
+                                         <table width="20%"  >
+                                          <tr align="center">
+                                               <th>
+                                                <label>
+                                                      <input type="radio" name="grupo2" value="algodao"/>Algodão
+                                                      <img src="imagens/algodao.jpg"  alt="algodao" />
+                                                </label> 
+                                              </th>    
+                                            </tr>
+                                         </table>
+                                      </td> 
+
+                                        <td>
+                                         <table width="20%"  >
+                                          <tr align="center">
+
+                                            </tr>
+                                         </table>
+                                      </td> 
+                                   </tr>
+
+
+                                    <tr align="center">
+                                      <td>
+                                         <table width="20%"   >
+                                            <tr align="center">
+                                                <th>
+                                                    <label>
+                                                      <input type="radio" name="grupo2" value="carro"/>Carro
+                                                      <img src="imagens/carro.png" alt="carro" /> 
+                                                    </label>
+                                                </th>  
+                                            </tr>
+                                         </table>
+                                      </td>
+
+                                      <td>
+                                         <table width="20%"  >
+                                            <tr align="center">
+
+                                            </tr>
+                                         </table>
+                                      </td>
+
+                                      <td>
+                                         <table width="20%"  >
+                                          <tr align="center">
+                                               <th>
+                                                   <label>
+                                                      <input type="radio" name="grupo2" value="moto"/>Motocicleta
+                                                      <img src="imagens/moto.jpg" alt="moto" />  
+                                                    </label>
+                                              </th>    
+                                            </tr>
+                                         </table>
+                                      </td> 
+
+                                        <td>
+                                         <table width="20%"  >
+                                          <tr align="center">
+
+                                            </tr>
+                                         </table>
+                                      </td> 
+                                   </tr>
+                                </table>
+                                
+                                <h3>Grupo III</h3><br/>
+                                <table  width="80%" height="10%" border="0" cellspacing="50%" cellpadding="3">
+
+                                   <tr align="center">
+                                      <td>
+                                         <table width="20%"   >
+                                            <tr align="center">
+                                               <th> 
+                                                <label>
+                                                      <input type="radio" name="grupo3" value="oculos"/>Óculos
+                                                      <img src="imagens/oculos.jpg"  alt="oculos" />
+                                                </label>
+                                                </th>
+
+                                            </tr>
+                                         </table>
+                                      </td>
+
+                                      <td>
+                                         <table width="20%"  >
+                                            <tr align="center">
+
+                                            </tr>
+                                         </table>
+                                      </td>
+
+                                      <td>
+                                         <table width="20%"  >
+                                          <tr align="center">
+                                               <th>
+                                                <label>
+                                                      <input type="radio" name="grupo3" value="cadeira"/>Cadeira de Praia
+                                                      <img src="imagens/cadeira.jpg"  alt="cadeira" />
+                                                </label> 
+                                              </th>    
+                                            </tr>
+                                         </table>
+                                      </td> 
+
+                                        <td>
+                                         <table width="20%"  >
+                                          <tr align="center">
+
+                                            </tr>
+                                         </table>
+                                      </td> 
+                                   </tr>
+
+
+                                    <tr align="center">
+                                      <td>
+                                         <table width="20%"   >
+                                            <tr align="center">
+                                                <th>
+                                                    <label>
+                                                      <input type="radio" name="grupo3" value="sombrinha"/>Sombrinha
+                                                      <img src="imagens/sombrinha.jpg" alt="sombrinha" /> 
+                                                    </label>
+                                                </th>  
+                                            </tr>
+                                         </table>
+                                      </td>
+
+                                      <td>
+                                         <table width="20%"  >
+                                            <tr align="center">
+
+                                            </tr>
+                                         </table>
+                                      </td>
+
+                                      <td>
+                                         <table width="20%"  >
+                                          <tr align="center">
+                                               <th>
+                                                   <label>
+                                                      <input type="radio" name="grupo3" value="maquina"/>Máquina de lavar
+                                                      <img src="imagens/maquina.jpg" alt="maquina" />  
+                                                    </label>
+                                              </th>    
+                                            </tr>
+                                         </table>
+                                      </td> 
+
+                                        <td>
+                                         <table width="20%"  >
+                                          <tr align="center">
+
+                                            </tr>
+                                         </table>
+                                      </td> 
+                                   </tr>
+
+                                </table>
+                                
+                                <h3>Grupo IV</h3><br/>
+                                <table width="80%" height="10%" border="0" cellspacing="50%" cellpadding="3">
+
+                                   <tr align="center">
+                                      <td>
+                                         <table width="20%"   >
+                                            <tr align="center">
+                                               <th> 
+                                                <label>
+                                                      <input type="radio" name="grupo4" value="bola"/>Bola
+                                                      <img src="imagens/bola.jpg"  alt="bola" />
+                                                </label>
+                                                </th>
+
+                                            </tr>
+                                         </table>
+                                      </td>
+
+                                      <td>
+                                         <table width="20%"  >
+                                            <tr align="center">
+
+                                            </tr>
+                                         </table>
+                                      </td>
+
+                                      <td>
+                                         <table width="20%"  >
+                                          <tr align="center">
+                                               <th>
+                                                <label>
+                                                      <input type="radio" name="grupo4" value="skate"/>Skate
+                                                      <img src="imagens/skate.jpg"  alt="skate" />
+                                                </label> 
+                                              </th>    
+                                            </tr>
+                                         </table>
+                                      </td> 
+
+                                        <td>
+                                         <table width="20%"  >
+                                          <tr align="center">
+
+                                            </tr>
+                                         </table>
+                                      </td> 
+                                   </tr>
+
+
+                                    <tr align="center">
+                                      <td>
+                                         <table width="20%"   >
+                                            <tr align="center">
+                                                <th>
+                                                    <label>
+                                                      <input type="radio" name="grupo4" value="patins"/>Patins
+                                                      <img src="imagens/patins.jpg" alt="patins" /> 
+                                                    </label>
+                                                </th>  
+                                            </tr>
+                                         </table>
+                                      </td>
+
+                                      <td>
+                                         <table width="20%"  >
+                                            <tr align="center">
+
+                                            </tr>
+                                         </table>
+                                      </td>
+
+                                      <td>
+                                         <table width="20%"  >
+                                          <tr align="center">
+                                               <th>
+                                                   <label>
+                                                      <input type="radio" name="grupo4" value="chave"/>Chave de Fenda
+                                                      <img src="imagens/chave.jpg" alt="chave" />  
+                                                    </label>
+                                              </th>    
+                                            </tr>
+                                         </table>
+                                      </td> 
+
+                                        <td>
+                                         <table width="20%"  >
+                                          <tr align="center">
+
+                                            </tr>
+                                         </table>
+                                      </td> 
+                                   </tr>
+
+                                </table>
+                    </form>
+
+                    <br>
+                    <h5>Agora, vamos conferir a resposta?</h5><br>    
+                     <button type="button" class="btn btn-primary" onclick=resultado()>Conferir Resposta</button><br>
+                </div>
+            </div>
+        </div>
+
+      </body>
+    </html>
